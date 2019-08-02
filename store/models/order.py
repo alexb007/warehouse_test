@@ -33,13 +33,6 @@ class Order(BaseStoreModel):
         verbose_name=_('Order Name')
     )
 
-    user = models.ForeignKey(
-        User,
-        on_delete=models.CASCADE,
-        related_name='orders',
-        verbose_name=_('User')
-    )
-
     status = models.CharField(
         max_length=12,
         choices=STATUSES,

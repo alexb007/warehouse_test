@@ -10,5 +10,3 @@ DATABASES = {
         'PORT': settings.ENVIRON.str('POSTGRES_PORT', default=''),
     }
 }
-
-print(DATABASES.get('default', {}).get('NAME'))
