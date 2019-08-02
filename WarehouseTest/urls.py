@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, re_path, include
 
 urlpatterns = [
-    path('', include('store.urls')),
+    path('', include('warehouse.urls')),
     path('admin/', admin.site.urls),
 ]
 if settings.SILK_ENABLED:

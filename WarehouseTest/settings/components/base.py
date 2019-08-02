@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'wq!zmeuqt5nh55-sdf8g2dn&^2&0zlujwvzqi_m-4x^^*n&=r9'
+SECRET_KEY = 'l4a1s%%1*9jf*7@)jbm(k+-*8mu!@i*jiq%(zq_6phibww9&k7'
 
 DEBUG = True
 
@@ -16,7 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
-    'store.apps.StoreConfig',
+    'warehouse.apps.WarehouseConfig',
     'rest_framework',
     'django_redis',
     'django_filters',

@@ -1,13 +1,10 @@
 import uuid
 
-from django.contrib.auth.models import User
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
-from store.models.base import BaseStoreModel
 
-
-class Order(BaseStoreModel):
+class Order(models.Model):
     class Status:
         INPROGRESS = 'inprogress'
         PACKING = 'packaging'
@@ -22,10 +19,17 @@ class Order(BaseStoreModel):
     )
 
     id = models.UUIDField(
-        default=uuid.uuid4(),
+        default=uuid.uuid4,
         primary_key=True,
         editable=False,
         verbose_name=_('UUID')
+    )
+
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+    )
+    updated_at = models.DateTimeField(
+        auto_now=True,
     )
 
     name = models.CharField(

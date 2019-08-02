@@ -32,4 +32,5 @@ JWT_AUTH = {
 
 API_KEY = settings.SECRET_KEY
 
-WAREHOUSE_API_URL = 'http://localhost:8001/api'
+STORE_API_KEY = 'wq!zmeuqt5nh55-sdf8g2dn&^2&0zlujwvzqi_m-4x^^*n&=r9'
+STORE_API_URL = 'http://localhost:8000/api'
