@@ -33,4 +33,4 @@ JWT_AUTH = {
 API_KEY = settings.SECRET_KEY
 
 STORE_API_KEY = 'wq!zmeuqt5nh55-sdf8g2dn&^2&0zlujwvzqi_m-4x^^*n&=r9'
-STORE_API_URL = 'http://localhost:8000/api'
+STORE_API_URL = settings.ENVIRON.str('STORE_API_URL', default='http://localhost:8000/api')
