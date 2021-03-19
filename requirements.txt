@@ -13,7 +13,7 @@ django-filter==2.2.0
 django-redis==4.10.0
 django-silk==3.0.2
 django-split-settings==0.3.0
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 djangorestframework-jwt==1.11.0
 gprof2dot==2017.9.19
 idna==2.8
